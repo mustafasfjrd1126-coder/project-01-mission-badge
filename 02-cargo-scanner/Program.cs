@@ -9,6 +9,13 @@ bool isExactlyAtLimit = false;
 bool hasContainers = false;
 bool countDiffersFromExpected = false;
 
+// min koder 
+isOverweight = cargoWeight < maxWeight;
+isExactlyAtLimit = cargoWeight == maxWeight;
+hasContainers = containerCount > 0;
+countDiffersFromExpected = containerCount != expectedContainers;
+
+
 Console.WriteLine($"Overweight: {isOverweight}");
 Console.WriteLine($"Exactly at limit: {isExactlyAtLimit}");
 Console.WriteLine($"Has containers: {hasContainers}");
