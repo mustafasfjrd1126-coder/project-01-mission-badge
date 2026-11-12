@@ -1,6 +1,6 @@
 bool hasSuit = true;
 int [] pressures = {44,89,90,91,110,112};
-int oxygenPercent =44;
+int oxygenPercent =35;
 bool alarmActive = false;
 
 // TODO: Kombiner alle kravene i ett logisk uttrykk.
@@ -8,7 +8,7 @@ bool canOpenAirlock = false;
 
 foreach (int pressure in pressures)
 {
-    if (hasSuit && oxygenPercent>=30 && (pressure>=90 && pressure<=110) && alarmActive = true)
+    if (hasSuit && oxygenPercent>=30 && (pressure>=90 && pressure<=110) && !alarmActive)
     {
         canOpenAirlock = true;
     }else
@@ -16,17 +16,13 @@ foreach (int pressure in pressures)
         canOpenAirlock = false;
     }
 
-}
-
-
-
-
 if (canOpenAirlock)
 {
     
-    Console.WriteLine("ACCESS GRANTED");
+    Console.WriteLine($"Pressure : {pressure} ACCESS GRANTED");
 }
 else
 {
-    Console.WriteLine("ACCESS DENIED");
+    Console.WriteLine($"Pressure : {pressure} ACCESS DENIED");
 }
+    }
