@@ -1,19 +1,17 @@
 int signalStrength = 72;
 
-/*
+string status = "";
 if (signalStrength >= 70)
 {
-    string status = "STRONG";
+     status = "STRONG";
 }
 else
 {
-    string status = "WEAK";
+     status = "WEAK";
 }
 
-Console.WriteLine(status); // status finnes ikke her
-*/
-
-// TODO: Lag en løsning der status kan brukes etter if/else.
-string status = "";
-
 Console.WriteLine($"Signal status: {status}");
+
+
+
+
