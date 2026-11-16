@@ -16,6 +16,8 @@ switch (signal)
     System.Console.WriteLine($"Prepare crew");
 break;
     case "GREEN":
+    System.Console.WriteLine("No emergency");
+    break;
 
     default:
     System.Console.WriteLine($"Unknown signal");
