@@ -1,5 +1,5 @@
-int firstSlot = 1;
-int lastSlot = 8;
+int firstSlot = 3;
+int lastSlot = 6;
 
 // TODO: Bruk for-løkke fra firstSlot til lastSlot, inklusive.
 
